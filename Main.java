@@ -157,7 +157,9 @@ class Main {
     System.out.println("Select the type of password you want to generate.\n");
 
     System.out.println("1 - Lowercase Letters\n2 - Uppercase Letters\n3 - Lowercase and Uppercase Letters\n4 - Lowercase, Uppercase, and Numbers\n5 - Uppercase, Lowercase, Numbers, and Symbols\n0 - Exit\n");
-    int input=scan.nextInt();
+    int input=9;
+    while (input!=0) {
+    input=scan.nextInt();
     if (input==1)
     {
       File fileName6=new File("Lowerpw.txt");
@@ -172,6 +174,8 @@ class Main {
       }
       outFile6.close();
       System.out.println("Your passwords have been generated.");
+      System.out.println("Select the type of password you want to generate.\n");
+      System.out.println("1 - Lowercase Letters\n2 - Uppercase Letters\n3 - Lowercase and Uppercase Letters\n4 - Lowercase, Uppercase, and Numbers\n5 - Uppercase, Lowercase, Numbers, and Symbols\n0 - Exit\n");
     }
     else if (input==2)
     {
@@ -187,6 +191,8 @@ class Main {
       }
       outFile7.close();
       System.out.println("Your passwords have been generated.");
+      System.out.println("Select the type of password you want to generate.\n");
+      System.out.println("1 - Lowercase Letters\n2 - Uppercase Letters\n3 - Lowercase and Uppercase Letters\n4 - Lowercase, Uppercase, and Numbers\n5 - Uppercase, Lowercase, Numbers, and Symbols\n0 - Exit\n");
     }
     else if (input==3)
     {
@@ -202,6 +208,8 @@ class Main {
       }
       outFile8.close();
       System.out.println("Your passwords have been generated.");
+      System.out.println("Select the type of password you want to generate.\n");
+      System.out.println("1 - Lowercase Letters\n2 - Uppercase Letters\n3 - Lowercase and Uppercase Letters\n4 - Lowercase, Uppercase, and Numbers\n5 - Uppercase, Lowercase, Numbers, and Symbols\n0 - Exit\n");
     }
     else if (input==4)
     {
@@ -217,6 +225,8 @@ class Main {
       }
       outFile9.close();
       System.out.println("Your passwords have been generated.");
+      System.out.println("Select the type of password you want to generate.\n");
+      System.out.println("1 - Lowercase Letters\n2 - Uppercase Letters\n3 - Lowercase and Uppercase Letters\n4 - Lowercase, Uppercase, and Numbers\n5 - Uppercase, Lowercase, Numbers, and Symbols\n0 - Exit\n");
     }
     else if (input==5)
     {
@@ -232,14 +242,23 @@ class Main {
       }
       outFile10.close();
       System.out.println("Your passwords have been generated.");
+      System.out.println("Select the type of password you want to generate.\n");
+      System.out.println("1 - Lowercase Letters\n2 - Uppercase Letters\n3 - Lowercase and Uppercase Letters\n4 - Lowercase, Uppercase, and Numbers\n5 - Uppercase, Lowercase, Numbers, and Symbols\n0 - Exit\n");
     }
     else if (input==0)
     {
-    System.out.println("Thank you for using our service.");
+      break;
     }
     else
     {
       System.out.println("Invalid Entry. Please try again.\n");
+      System.out.println("Select the type of password you want to generate.\n");
+      System.out.println("1 - Lowercase Letters\n2 - Uppercase Letters\n3 - Lowercase and Uppercase Letters\n4 - Lowercase, Uppercase, and Numbers\n5 - Uppercase, Lowercase, Numbers, and Symbols\n0 - Exit\n");
     }
+  }
+  
+ System.out.println("Thank you for using our service.");
+
+
   }
 }
